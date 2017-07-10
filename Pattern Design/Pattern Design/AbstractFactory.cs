@@ -8,22 +8,25 @@ namespace Pattern_Design
 {
     class AbstractFactory
     {
-        static void Main(string[] args)
-        {
-            ContinentFactory africa = new AfricaFactory();
-            AnimalWorld world = new AnimalWorld(africa);
-            world.RunFoodChain();
+        //static void Main(string[] args)
+        //{
+        //    //abstract fonksiyolar instance alınamaz.
+        //    //override edidiliği class ile instance alınabilir.
+        //    ContinentFactory africa = new AfricaFactory();
+        //    AnimalWorld world = new AnimalWorld(africa);
+        //    world.RunFoodChain();
 
-            ContinentFactory america = new AmericaFactory();
-            world = new AnimalWorld(america);
-            world.RunFoodChain();
+        //    ContinentFactory america = new AmericaFactory();
+        //    world = new AnimalWorld(america);
+        //    world.RunFoodChain();
 
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
         abstract class ContinentFactory
         {
+            //abstract class içi abstract class olmalıdır. 
             public abstract Herbivore CreateHerbivore();
             public abstract Carnivore CreateCarnivore();
         }
@@ -63,6 +66,7 @@ namespace Pattern_Design
         {
             public abstract void Eat(Herbivore h);
         }
+
         class Wildebeest : Herbivore
         {
 
