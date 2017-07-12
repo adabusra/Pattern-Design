@@ -8,95 +8,120 @@ namespace Pattern_Design
 {
     class trial
     {
-        static void Main(string[] args)
+        //static void Main()
+        //{
+        //    //Document[] documents = new Document[3];
+
+        //    //documents[0] = new Resume();
+        //    //documents[1] = new Report();
+        //    //documents[2] = new Return();
+
+        //    //foreach(Document document in documents)
+        //    //{
+        //    //    Console.WriteLine("\n" + document.GetType().Name + "--");
+        //    //    foreach(Page page in document.Pages)
+        //    //    {
+        //    //        Console.WriteLine(" " + page.GetType().Name);
+        //    //    }
+        //    //}
+        //    //Console.ReadKey();
+        //}
+        abstract class Page
         {
-            Director director = new Director();
 
-            Builder b1 = new ConcreteBuilder1();
-            Builder b2 = new ConcreteBuilder2();
-
-            director.Constructer(b1);
-            Product p1 = b1.GetResult();
-            p1.Show();
-
-            director.Constructer(b2);
-            Product p2 = b2.GetResult();
-            p2.Show();
-
-            // Wait for user
-            Console.ReadKey();
-        }
-        
-        class Director
-        {
-            public void Constructer(Builder builder)
-            {
-                builder.BuildPartA();
-                builder.BuildPartB();
-            }
         }
 
-        abstract class Builder
+        class IntroductionPage : Page
         {
-            public abstract void BuildPartA();
-            public abstract void BuildPartB();
-            public abstract Product GetResult();
+
+        }
+        class ConclusionPage : Page
+        {
+
         }
 
-        class ConcreteBuilder1 : Builder
+        class SkillsPage : Page
         {
-            private Product _product = new Product();
 
-            public override void BuildPartA()
+        }
+
+        class EducationPage : Page
+        {
+
+        }
+        class ExperiencePage : Page
+        {
+
+        }
+
+        class ResultsPage : Page
+        {
+
+        }
+        class CocllusionPage : Page
+        {
+
+        }
+        class SummaryPage : Page
+        {
+
+        }
+        class BibliographyPage : Page
+        {
+
+        }
+
+        abstract class Document
+        {
+            private List<Page> _pages = new List<Page>();
+
+            public Document()
             {
-                _product.Add("PartA");
+                this.CreatePages();
             }
 
-            public override void BuildPartB()
+            public List<Page> Pages
             {
-                _product.Add("PartB");
+                get { return _pages; }
             }
 
-            public override Product GetResult()
+            public abstract void CreatePages();
+        }
+        class Resume : Document
+        {
+            public override void CreatePages()
             {
-                return _product;
+                Pages.Add(new SkillsPage());
+                Pages.Add(new EducationPage());
+                Pages.Add(new ExperiencePage());
             }
         }
 
-        class ConcreteBuilder2 : Builder
+        class Report : Document
         {
-            private Product _product = new Product();
-
-            public override void BuildPartA()
+            public override void CreatePages()
             {
-                _product.Add("PartX");
-            }
-            public override void BuildPartB()
-            {
-                _product.Add("Part Y");
-            }
-            public override Product GetResult()
-            {
-                return _product;
+                Pages.Add(new IntroductionPage());
+                Pages.Add(new ResultsPage());
+                Pages.Add(new ConclusionPage());
+                Pages.Add(new SummaryPage());
+                Pages.Add(new BibliographyPage());
             }
         }
-
-        class Product
+        class Return : Document
         {
-            private List<string> _parts = new List<string>();
-
-            public void Add(string part)
+            public override void CreatePages()
             {
-                _parts.Add(part);
+                Pages.Add(new IntroductionPage());
+                Pages.Add(new ResultsPage());
+                Pages.Add(new ConclusionPage());
+                Pages.Add(new SummaryPage());
             }
 
-            public void Show()
-            {
-                Console.WriteLine("\nProduct Parts -------");
-                foreach (string part in _parts)
-                    Console.WriteLine(part);
-            }
         }
+
 
     }
+
 }
+
