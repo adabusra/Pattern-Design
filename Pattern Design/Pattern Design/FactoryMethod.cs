@@ -8,27 +8,27 @@ namespace Pattern_Design
 {
     class FactoryMethod
     {
-        static void Main()
-        {
-            Document[] documents = new Document[3];
+        //static void Main()
+        //{
+        //    Document[] documents = new Document[3];
 
-            documents[0] = new Ege();
-            documents[1] = new IcAnadolu();
-            documents[2] = new Karadeniz();
-            documents[3] = new Marmara();
+        //    documents[0] = new Ege();
+        //    documents[1] = new IcAnadolu();
+        //    documents[2] = new Karadeniz();
+        //    documents[3] = new Marmara();
 
 
-            foreach (Document document in documents)
-            {
-                Console.WriteLine("\n" + document.GetType().Name + "--");
-                foreach (Universite univer in document.Universitem)
-                {
-                    Console.WriteLine(" " + univer.GetType().Name);
-                }
+        //    foreach (Document document in documents)
+        //    {
+        //        Console.WriteLine("\n" + document.GetType().Name + "--");
+        //        foreach (Universite univer in document.Universitem)
+        //        {
+        //            Console.WriteLine(" " + univer.GetType().Name);
+        //        }
 
-            }
-            Console.ReadKey();
-        }
+        //    }
+        //    Console.ReadKey();
+        //}
 
         class Universite
         {
