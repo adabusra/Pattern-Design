@@ -8,37 +8,37 @@ namespace Pattern_Design
 {
     class Singleton
     {
-        static void Main()
-        {
-            Singleton s1 = Singleton.Instance();
-            Singleton s2 = Singleton.Instance();
+        //static void Main()
+        //{
+        //    SingletonOne s1 = SingletonOne.Instance();
+        //    SingletonOne s2 = SingletonOne.Instance();
 
  
-            if (s1 == s2)
-            {
-                Console.WriteLine("Objects are the same instance");
-            }
+        //    if (s1 == s2)
+        //    {
+        //        Console.WriteLine("Objects are the same instance");
+        //    }
 
          
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 
-    class Singleton
+    class SingletonOne
     {
-        private static Singleton _instance;
+        private static SingletonOne _instance;
         
 
-        protected Singleton()
+        protected SingletonOne()
         {
         }
 
-        public static Singleton Instance()
+        public static SingletonOne Instance()
         {
 
             if (_instance == null)
             {
-                _instance = new Singleton();
+                _instance = new SingletonOne();
             }
 
             return _instance;
