@@ -8,24 +8,24 @@ namespace Pattern_Design
 {
     class Units
     {
-        static void Main()
-        {
-            Compound unknown = new Compound("Unknown");
-            unknown.Display();
+        //static void Main()
+        //{
+        //    Compound unknown = new Compound("Unknown");
+        //    unknown.Display();
 
-            Compound water = new RichCompound("Water");
-            water.Display();
+        //    Compound water = new RichCompound("Water");
+        //    water.Display();
 
-            Compound benzene = new RichCompound("Benzene");
-            benzene.Display();
+        //    Compound benzene = new RichCompound("Benzene");
+        //    benzene.Display();
 
-            Compound ethanol = new RichCompound("Ethanol");
-            ethanol.Display();
+        //    Compound ethanol = new RichCompound("Ethanol");
+        //    ethanol.Display();
             
 
-            Console.ReadKey();
+        //    Console.ReadKey();
 
-        }
+        //}
     }
 
     class Compound
@@ -70,8 +70,6 @@ namespace Pattern_Design
             Console.WriteLine(" Weight: {0}", _molecularWeight);
             Console.WriteLine(" Melting Pt: {0}", _meltingPoint);
             Console.WriteLine(" Boiling Pt: {0}", _bolingPoint);
-
-
 
         }
 
