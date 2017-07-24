@@ -8,21 +8,21 @@ namespace Pattern_Design
 {
     class bridge
     {
-        static void Main()
-        {
-            Abstraction ab = new RefinedAbstraction();
+        //static void Main()
+        //{
+        //    Abstraction ab = new RefinedAbstraction();
 
-            ab.Implementor = new ConcreteImplementorA();
-            ab.Operation();
+        //    ab.Implementor = new ConcreteImplementorA();
+        //    ab.Operation();
 
-            ab.Implementor = new ConcreteImplementorB();
-            ab.Operation();
+        //    ab.Implementor = new ConcreteImplementorB();
+        //    ab.Operation();
 
 
 
-            Console.ReadKey();
+        //    Console.ReadKey();
 
-        }
+        //}
     }
 
 
