@@ -21,9 +21,10 @@ namespace Pattern_Design
 
 
             Console.ReadKey();
-       
+
         }
     }
+
 
     class Abstraction
     {
@@ -35,7 +36,7 @@ namespace Pattern_Design
         }
 
         public virtual void Operation()
-        {
+        {   
             implementor.Operation();
         }
     }
@@ -43,15 +44,14 @@ namespace Pattern_Design
     abstract class Implementor
     {
         public abstract void Operation();
-
     }
+
     class RefinedAbstraction : Abstraction
     {
         public override void Operation()
         {
             implementor.Operation();
         }
-
     }
 
     class ConcreteImplementorA: Implementor
@@ -60,7 +60,6 @@ namespace Pattern_Design
         {
             Console.WriteLine("ConcreteImplementorA");
         }
-
     }
     
     class ConcreteImplementorB : Implementor

@@ -46,6 +46,8 @@
     <Compile Include="AbstractFactory.cs" />
     <Compile Include="Adapter.cs" />
     <Compile Include="Adapter1.cs" />
+    <Compile Include="Bridge.cs" />
+    <Compile Include="BridgeOne.cs" />
     <Compile Include="Builder.cs" />
     <Compile Include="FactoryMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
