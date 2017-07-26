@@ -8,13 +8,13 @@ namespace Pattern_Design
 {
     class Unit
     {
-        static void Main()
-        {
-            Target target = new Adapter();
-            target.Request();
+        //static void Main()
+        //{
+        //    Target target = new Adapter();
+        //    target.Request();
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
 
     }
 
