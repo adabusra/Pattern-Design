@@ -49,7 +49,7 @@ namespace Uygulamlar
 
         public Book(string author, string title,int numCopies)
         {
-            this._title = author;
+            this._author = author;
             this._title = title;
             this.NumCopies = numCopies;
         }
