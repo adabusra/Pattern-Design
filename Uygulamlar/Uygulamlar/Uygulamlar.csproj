@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ComponentTwo.cs" />
     <Compile Include="Decorator.cs" />
+    <Compile Include="DecoratorTwo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
