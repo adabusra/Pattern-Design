@@ -8,30 +8,30 @@ namespace Uygulamlar
 {
     class ComponentTwo
     {
-        static void Main()
-        {
-            KompoziteEleman root = new KompoziteEleman("Picture");
-            root.Ekle(new IlkelEleman("Kırmizi satır"));
-            root.Ekle(new IlkelEleman("Mavi satır"));
-            root.Ekle(new IlkelEleman("Yeşil Kutu"));
+        //static void Main()
+        //{
+        //    KompoziteEleman root = new KompoziteEleman("Picture");
+        //    root.Ekle(new IlkelEleman("Kırmizi satır"));
+        //    root.Ekle(new IlkelEleman("Mavi satır"));
+        //    root.Ekle(new IlkelEleman("Yeşil Kutu"));
 
-            KompoziteEleman comp = new KompoziteEleman("İki Daire");
-            comp.Ekle(new IlkelEleman("Siyah Daire"));
-            comp.Ekle(new IlkelEleman("Beyaz Daire"));
-
-
-
-            root.Ekle(comp);
+        //    KompoziteEleman comp = new KompoziteEleman("İki Daire");
+        //    comp.Ekle(new IlkelEleman("Siyah Daire"));
+        //    comp.Ekle(new IlkelEleman("Beyaz Daire"));
 
 
-            IlkelEleman ie = new IlkelEleman("Sarı satır");
-            root.Ekle(ie);
-            root.Duzenle(ie);
 
-            root.Ekran(1);
+        //    root.Ekle(comp);
 
-            Console.ReadKey();
-        }
+
+        //    IlkelEleman ie = new IlkelEleman("Sarı satır");
+        //    root.Ekle(ie);
+        //    root.Duzenle(ie);
+
+        //    root.Ekran(1);
+
+        //    Console.ReadKey();
+        //}
         
     }
 
