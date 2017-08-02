@@ -8,25 +8,25 @@ namespace Uygulamlar
 {
     class DecoratorTwo
     {
-        static void Main()
-        {
-            Book book = new Book("Worley", "Inside ASP.NET", 10);
-            book.Display();
+        //static void Main()
+        //{
+        //    Book book = new Book("Worley", "Inside ASP.NET", 10);
+        //    book.Display();
 
 
-            Video video = new Video("Spielberg", "Jaws", 23, 92);
-            video.Display();
+        //    Video video = new Video("Spielberg", "Jaws", 23, 92);
+        //    video.Display();
 
-            Console.WriteLine("\nMaking video borrowable: ");
+        //    Console.WriteLine("\nMaking video borrowable: ");
 
-            Borrowable borrowvideo = new Borrowable(video);
-            borrowvideo.BorrowItem("Customer #1");
-            borrowvideo.BorrowItem("Customer #2");
+        //    Borrowable borrowvideo = new Borrowable(video);
+        //    borrowvideo.BorrowItem("Customer #1");
+        //    borrowvideo.BorrowItem("Customer #2");
 
-            borrowvideo.Display();
+        //    borrowvideo.Display();
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 
     abstract class LibraryItem
