@@ -8,15 +8,15 @@ namespace Uygulamlar
 {
     class Facade
     {
-        static void Main()
-        {
-            Facadee facede = new Facadee();
-            facede.MethodA();
-            facede.MethodB();
+        //static void Main()
+        //{
+        //    Facadee facede = new Facadee();
+        //    facede.MethodA();
+        //    facede.MethodB();
 
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 
     class SubSystemOne
