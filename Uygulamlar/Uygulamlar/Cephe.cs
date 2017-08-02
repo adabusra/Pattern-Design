@@ -8,16 +8,16 @@ namespace Uygulamlar
 {
     class Cephe
     {
-        static void Main()
-        {
-            Mortgage mortgage = new Mortgage();
+        //static void Main()
+        //{
+        //    Mortgage mortgage = new Mortgage();
 
-            Customer customer = new Customer("Ann McKinsey");
-            bool eligible = mortgage.IsEligible(customer, 125000);
-            Console.WriteLine("\n" + customer.Name + " has been " + (eligible ? "approved" : "Rejected"));
+        //    Customer customer = new Customer("Ann McKinsey");
+        //    bool eligible = mortgage.IsEligible(customer, 125000);
+        //    Console.WriteLine("\n" + customer.Name + " has been " + (eligible ? "approved" : "Rejected"));
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 
     class Bank
