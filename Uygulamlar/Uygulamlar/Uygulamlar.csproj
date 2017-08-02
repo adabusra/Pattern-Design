@@ -49,6 +49,7 @@
     <Compile Include="DecoratorTwo.cs" />
     <Compile Include="Facade.cs" />
     <Compile Include="Flyweight.cs" />
+    <Compile Include="FlyweightReal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

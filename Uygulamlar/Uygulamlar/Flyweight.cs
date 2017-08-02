@@ -9,27 +9,27 @@ namespace Uygulamlar
 {
    class MainAppp
    {
-        static void Main()
-        {
-            int extrinsicstate = 22;
+        //static void Main()
+        //{
+        //    int extrinsicstate = 22;
 
-            FlyweightFactory factory = new FlyweightFactory();
+        //    FlyweightFactory factory = new FlyweightFactory();
 
-            Flyweight fx = factory.GetFlyweight("X");
-            fx.Operation(--extrinsicstate);
+        //    Flyweight fx = factory.GetFlyweight("X");
+        //    fx.Operation(--extrinsicstate);
 
-            Flyweight fy = factory.GetFlyweight("Y");
-            fy.Operation(--extrinsicstate);
+        //    Flyweight fy = factory.GetFlyweight("Y");
+        //    fy.Operation(--extrinsicstate);
 
-            Flyweight fz = factory.GetFlyweight("Z");
-            fz.Operation(--extrinsicstate);
+        //    Flyweight fz = factory.GetFlyweight("Z");
+        //    fz.Operation(--extrinsicstate);
 
-            UnsharedConcreteFlyweight fu = new UnsharedConcreteFlyweight();
+        //    UnsharedConcreteFlyweight fu = new UnsharedConcreteFlyweight();
 
-            fu.Operation(--extrinsicstate);
+        //    fu.Operation(--extrinsicstate);
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
    }
 
    class FlyweightFactory
