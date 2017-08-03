@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cephe.cs" />
+    <Compile Include="ChanOfResp.cs" />
     <Compile Include="ComponentTwo.cs" />
     <Compile Include="Decorator.cs" />
     <Compile Include="DecoratorTwo.cs" />
@@ -53,6 +54,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proxy.cs" />
+    <Compile Include="ProxyReal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

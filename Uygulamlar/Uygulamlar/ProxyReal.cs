@@ -8,11 +8,17 @@ namespace Uygulamlar
 {
     class ProxyReal
     {
-        static void Main()
-        {
+        //static void Main()
+        //{
+        //    MathProxy proxy = new MathProxy();
 
-            Console.ReadKey();
-        }
+        //    Console.WriteLine("4 + 2 = " + proxy.Add(4, 2));
+        //    Console.WriteLine("4 - 2 = " + proxy.Sub(4, 2));
+        //    Console.WriteLine("4 * 2 = " + proxy.Mul(4, 2));
+        //    Console.WriteLine("4 / 2 = " + proxy.Div(4, 2));
+
+        //    Console.ReadKey();
+        //}
     }
 
     public interface IMath
@@ -27,6 +33,31 @@ namespace Uygulamlar
     {
         public double Add(double x, double y) { return x + y; }
         public double Sub(double x, double y) { return x - y; }
+        public double Mul(double x, double y) { return x * y; }
+        public double Div(double x, double y) { return x / y; }
+    }
+
+    class MathProxy : IMath
+    {
+        private Math _math = new Math();
+
+        public double Add(double x, double y)
+        {
+            return _math.Add(x, y);
+        }
+        public double Sub(double x, double y)
+        {
+            return _math.Sub(x, y);
+        }
+        public double Mul(double x, double y)
+        {
+            return _math.Mul(x, y);
+        }
+        public double Div(double x, double y)
+        {
+            return _math.Div(x, y);
+
+        }
     }
 
 }
