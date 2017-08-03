@@ -8,25 +8,26 @@ namespace Uygulamlar
 {
     class FlyweightReal
     {
-        static void Main()
-        {
-            string document = "AAZZBBZB";
+        //static void Main()
+        //{
+        //    string document = "AAZZBBZB";
 
-            char[] chars = document.ToCharArray();
+        //    char[] chars = document.ToCharArray();
+            
 
-            CharacterFactory factory = new CharacterFactory();
+        //    CharacterFactory factory = new CharacterFactory();
 
-            int pointSize = 10;
+        //    int pointSize = 10;
 
-            foreach(char c in chars)
-            {
-                pointSize++;
-                Character character = factory.GetCharacter(c);
-                character.Display(pointSize);
-            }
+        //    foreach(char c in chars)
+        //    {
+        //        pointSize++;
+        //        Character character = factory.GetCharacter(c);
+        //        character.Display(pointSize);
+        //    }
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 
     class CharacterFactory
