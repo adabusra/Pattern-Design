@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Cephe.cs" />
     <Compile Include="ChanOfResp.cs" />
+    <Compile Include="ChanOfRespReal.cs" />
     <Compile Include="ComponentTwo.cs" />
     <Compile Include="Decorator.cs" />
     <Compile Include="DecoratorTwo.cs" />
