@@ -8,36 +8,36 @@ namespace Uygulamlar
 {
     class ChanOfRespReal
     {
-        static void Main()
-        {
-            Approver larry = new Director();
-            Approver sam = new VicePresident();
-            Approver tammy = new President();
+        //static void Main()
+        //{
+        //    Approver larry = new Director();
+        //    Approver sam = new VicePresident();
+        //    Approver tammy = new President();
 
-            larry.SetSuccessor(sam);
-            sam.SetSuccessor(tammy);
-            
-            Purchase p = new Purchase(2034, 350.00, "Assets");
-            larry.ProcessRequest(p);
+        //    larry.SetSuccessor(sam);
+        //    sam.SetSuccessor(tammy);
 
-            p = new Purchase(2035, 32590.10, "Project X");
-            larry.ProcessRequest(p);
+        //    Purchase p = new Purchase(2034, 350.00, "Assets");
+        //    larry.ProcessRequest(p);
 
-            p = new Purchase(2036, 122100.00, "Project Y");
-            larry.ProcessRequest(p);
+        //    p = new Purchase(2035, 32590.10, "Project X");
+        //    larry.ProcessRequest(p);
 
-            Console.ReadKey();
-        }
+        //    p = new Purchase(2036, 122100.00, "Project Y");
+        //    larry.ProcessRequest(p);
+
+        //    Console.ReadKey();
+        //}
     }
 
     abstract class Approver
     {
-       protected Approver successor;
+        protected Approver successor;
 
-       public void SetSuccessor(Approver successor)
-       {
+        public void SetSuccessor(Approver successor)
+        {
             this.successor = successor;
-       }
+        }
 
         public abstract void ProcessRequest(Purchase purchase);
     }
@@ -65,7 +65,7 @@ namespace Uygulamlar
             {
                 Console.WriteLine("{0} approved request# {1}", this.GetType().Name, purchase.Number);
             }
-            else if (successor !=null)
+            else if (successor != null)
             {
                 successor.ProcessRequest(purchase);
             }
@@ -118,4 +118,5 @@ namespace Uygulamlar
             set { _purpose = value; }
         }
 
+    }
 }
