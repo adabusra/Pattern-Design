@@ -8,18 +8,18 @@ namespace Uygulamlar
 {
     class Commandd
     {
-        static void Main()
-        {
-            Receiver receiver = new Receiver();
-            Command command = new ConcreteCommand(receiver);
-            Invoker invoker = new Invoker();
+        //static void Main()
+        //{
+        //    Receiver receiver = new Receiver();
+        //    Command command = new ConcreteCommand(receiver);
+        //    Invoker invoker = new Invoker();
 
 
-            invoker.SetCommand(command);
-            invoker.ExecuteCommand();
+        //    invoker.SetCommand(command);
+        //    invoker.ExecuteCommand();
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 
     abstract class Command
