@@ -47,12 +47,14 @@
     <Compile Include="ChanOfResp.cs" />
     <Compile Include="ChanOfRespReal.cs" />
     <Compile Include="Command.cs" />
+    <Compile Include="CommanReal.cs" />
     <Compile Include="ComponentTwo.cs" />
     <Compile Include="Decorator.cs" />
     <Compile Include="DecoratorTwo.cs" />
     <Compile Include="Facade.cs" />
     <Compile Include="Flyweight.cs" />
     <Compile Include="FlyweightReal.cs" />
+    <Compile Include="Interpreter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proxy.cs" />
