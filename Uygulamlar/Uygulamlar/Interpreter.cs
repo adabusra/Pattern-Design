@@ -10,25 +10,25 @@ namespace Uygulamlar
     class Interpreter
     {
         
-        static void Main()
-        {
-            Context context = new Context();
+        //static void Main()
+        //{
+        //    //Context context = new Context();
  
-            ArrayList list = new ArrayList();
+        //    //ArrayList list = new ArrayList();
             
-            list.Add(new TerminalExpression());
-            list.Add(new NonterminalExpression());
-            list.Add(new TerminalExpression());
-            list.Add(new TerminalExpression());
+        //    //list.Add(new TerminalExpression());
+        //    //list.Add(new NonterminalExpression());
+        //    //list.Add(new TerminalExpression());
+        //    //list.Add(new TerminalExpression());
 
       
-            foreach (AbstractExpression exp in list)
-            {
-                exp.Interpret(context);
-            }
+        //    //foreach (AbstractExpression exp in list)
+        //    //{
+        //    //    exp.Interpret(context);
+        //    //}
 
-            Console.ReadKey();
-        }
+        //    //Console.ReadKey();
+        //}
     }
     
     class Context

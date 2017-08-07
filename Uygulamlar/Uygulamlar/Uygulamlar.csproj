@@ -55,6 +55,7 @@
     <Compile Include="Flyweight.cs" />
     <Compile Include="FlyweightReal.cs" />
     <Compile Include="Interpreter.cs" />
+    <Compile Include="InterpreterReal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proxy.cs" />
