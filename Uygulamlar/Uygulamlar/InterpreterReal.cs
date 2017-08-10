@@ -8,25 +8,25 @@ namespace Uygulamlar
 {
     class InterpreterReal
     {
-        static void Main()
-        {
-            string roman = "MCMXXVIII";
-            Contextt contextt = new Contextt(roman);
+        //static void Main()
+        //{
+        //    string roman = "MCMXXVIII";
+        //    Contextt contextt = new Contextt(roman);
 
-            List<Expression> tree = new List<Expression>();
-            tree.Add(new ThousandExpression());
-            tree.Add(new HundredExpression());
-            tree.Add(new TenExpression());
-            tree.Add(new OneExpression());
+        //    List<Expression> tree = new List<Expression>();
+        //    tree.Add(new ThousandExpression());
+        //    tree.Add(new HundredExpression());
+        //    tree.Add(new TenExpression());
+        //    tree.Add(new OneExpression());
 
-            foreach(Expression exp in tree)
-            {
-                exp.Interpret(contextt);
-            }
+        //    foreach(Expression exp in tree)
+        //    {
+        //        exp.Interpret(contextt);
+        //    }
 
-            Console.WriteLine("{0} = {1}", roman, contextt.Output);
-            Console.ReadKey();
-        }
+        //    Console.WriteLine("{0} = {1}", roman, contextt.Output);
+        //    Console.ReadKey();
+        //}
     }
 
     class Contextt
