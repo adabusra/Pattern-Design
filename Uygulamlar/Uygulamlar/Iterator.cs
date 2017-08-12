@@ -10,28 +10,28 @@ namespace Uygulamlar
     class MainAppppp
     {
         
-        static void Main()
-        {
-            ConcreteAggregate a = new ConcreteAggregate();
-            a[0] = "Item A";
-            a[1] = "Item B";
-            a[2] = "Item C";
-            a[3] = "Item D";
+        //static void Main()
+        //{
+        //    ConcreteAggregate a = new ConcreteAggregate();
+        //    a[0] = "Item A";
+        //    a[1] = "Item B";
+        //    a[2] = "Item C";
+        //    a[3] = "Item D";
 
-            Iterator i = a.CreateIterator();
+        //    Iterator i = a.CreateIterator();
 
-            Console.WriteLine("Iterating over collection:");
+        //    Console.WriteLine("Iterating over collection:");
 
-            object item = i.First();
-            while(item != null)
-            {
-                Console.WriteLine(item);
-                item = i.Next();
-            }
+        //    object item = i.First();
+        //    while(item != null)
+        //    {
+        //        Console.WriteLine(item);
+        //        item = i.Next();
+        //    }
 
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
     
     abstract class Aggregate
