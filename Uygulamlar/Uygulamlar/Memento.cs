@@ -6,73 +6,73 @@ using System.Threading.Tasks;
 
 namespace Uygulamlar
 {
-    class MementoApp
-    {
-        static void Main()
-        {
-            Originator o = new Originator();
-            o.State = "On";
+    //class MementoApp
+    //{
+    //    //static void Main()
+    //    //{
+    //    //    Originator o = new Originator();
+    //    //    o.State = "On";
 
-            Caretaker c = new Caretaker();
-            c.Memento = o.CreateMemento();
+    //    //    Caretaker c = new Caretaker();
+    //    //    c.Memento = o.CreateMemento();
 
-            o.State = "Off";
+    //    //    o.State = "Off";
 
-            o.SetMemento(c.Memento);
+    //    //    o.SetMemento(c.Memento);
 
-            Console.ReadKey();
-        }
-    }
+    //    //    Console.ReadKey();
+    //    //}
+    //}
 
-    class Originator
-    {
-        private string _state;
+    //class Originator
+    //{
+    //    private string _state;
 
-        public string State
-        {
-            get { return _state; }
-            set
-            {
-                _state = value;
-                Console.WriteLine("State= " + _state);
-            }
-        }
+    //    public string State
+    //    {
+    //        get { return _state; }
+    //        set
+    //        {
+    //            _state = value;
+    //            Console.WriteLine("State= " + _state);
+    //        }
+    //    }
 
-        public Memento CreateMemento()
-        {
-            return (new Memento(_state));
-        }
+    //    public Memento CreateMemento()
+    //    {
+    //        return (new Memento(_state));
+    //    }
 
-        public void SetMemento(Memento memento)
-        {
-            Console.WriteLine("Restoring state...");
-            State = memento.State;
-        }
+    //    public void SetMemento(Memento memento)
+    //    {
+    //        Console.WriteLine("Restoring state...");
+    //        State = memento.State;
+    //    }
         
-    }
+    //}
 
-    class Memento
-    {
-        private string _state;
+    //class Memento
+    //{
+    //    private string _state;
 
-        public Memento(string state)
-        {
-            this._state = state;
-        }
-        public string State
-        {
-            get { return _state; }
-        }
-    }
+    //    public Memento(string state)
+    //    {
+    //        this._state = state;
+    //    }
+    //    public string State
+    //    {
+    //        get { return _state; }
+    //    }
+    //}
 
-    class Caretaker
-    {
-        private Memento _memento;
+    //class Caretaker
+    //{
+    //    private Memento _memento;
 
-        public Memento Memento
-        {
-            set { _memento = value; }
-            get { return _memento; }
-        }
-    }
+    //    public Memento Memento
+    //    {
+    //        set { _memento = value; }
+    //        get { return _memento; }
+    //    }
+    //}
 }
