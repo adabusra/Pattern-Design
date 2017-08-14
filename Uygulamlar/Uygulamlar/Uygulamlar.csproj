@@ -58,6 +58,7 @@
     <Compile Include="InterpreterReal.cs" />
     <Compile Include="Iterator.cs" />
     <Compile Include="IteratorReal.cs" />
+    <Compile Include="Memento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proxy.cs" />
