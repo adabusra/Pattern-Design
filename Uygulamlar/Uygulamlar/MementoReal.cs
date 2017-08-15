@@ -8,25 +8,25 @@ namespace Uygulamlar
 {
     class MementoReal
     {
-        static void Main()
-        {
-            SalesProspect s = new SalesProspect();
-            s.Name = "Noel van Helen";
-            s.Phone = "(412) 256-0990";
-            s.Budget = 252000.0;
+        //static void Main()
+        //{
+        //    SalesProspect s = new SalesProspect();
+        //    s.Name = "Noel van Helen";
+        //    s.Phone = "(412) 256-0990";
+        //    s.Budget = 252000.0;
 
-            ProspectMemory m = new ProspectMemory();
-            m.Memento = s.SaveMemento();
+        //    ProspectMemory m = new ProspectMemory();
+        //    m.Memento = s.SaveMemento();
 
-            s.Name = "Leo Welch";
-            s.Phone = "(310) 209-71111";
-            s.Budget = 10000000.0;
+        //    s.Name = "Leo Welch";
+        //    s.Phone = "(310) 209-71111";
+        //    s.Budget = 10000000.0;
 
-            s.RestoreMemento(m.Memento);
+        //    s.RestoreMemento(m.Memento);
 
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 
     class SalesProspect
