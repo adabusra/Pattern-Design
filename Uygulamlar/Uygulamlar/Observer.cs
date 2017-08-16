@@ -8,19 +8,19 @@ namespace Uygulamlar
 {
     class ObserverApp
     {
-        static void Main()
-        {
-            ConcSubject s = new ConcSubject();
+        //static void Main()
+        //{
+        //    ConcSubject s = new ConcSubject();
 
-            s.Attach(new ConcObserver(s, "X"));
-            s.Attach(new ConcObserver(s, "Y"));
-            s.Attach(new ConcObserver(s, "Z"));
+        //    s.Attach(new ConcObserver(s, "X"));
+        //    s.Attach(new ConcObserver(s, "Y"));
+        //    s.Attach(new ConcObserver(s, "Z"));
 
-            s.SubjectState = "ABC";
-            s.Notify();
+        //    s.SubjectState = "ABC";
+        //    s.Notify();
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 
     abstract class SubjectOberser
