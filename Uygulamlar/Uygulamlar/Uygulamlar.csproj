@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AStrategyReal.cs" />
     <Compile Include="Cephe.cs" />
     <Compile Include="ChanOfResp.cs" />
     <Compile Include="ChanOfRespReal.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="State.cs" />
     <Compile Include="StateReal.cs" />
     <Compile Include="Strategy.cs" />
+    <Compile Include="StrategyRealcs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

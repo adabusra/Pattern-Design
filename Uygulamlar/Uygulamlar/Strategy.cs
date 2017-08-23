@@ -6,66 +6,66 @@ using System.Threading.Tasks;
 
 namespace Uygulamlar
 {
-    class StrategyApp
-    {
-        static void Main()
-        {
-            ContextStrategy context;
+    //class StrategyApp
+    //{
+    //    static void Main()
+    //    {
+    //        ContextStrategy context;
 
-            context = new ContextStrategy(new ConcreteStrategy());
-            context.ContextInterface();
+    //        context = new ContextStrategy(new ConcreteStrategy());
+    //        context.ContextInterface();
 
-            context = new ContextStrategy(new ConcreteStrategyB());
-            context.ContextInterface();
+    //        context = new ContextStrategy(new ConcreteStrategyB());
+    //        context.ContextInterface();
 
-            context = new ContextStrategy(new ConcreteStrategyC());
-            context.ContextInterface();
+    //        context = new ContextStrategy(new ConcreteStrategyC());
+    //        context.ContextInterface();
 
-            Console.ReadKey();
-        }
-    }
+    //        Console.ReadKey();
+    //    }
+    //}
 
-    abstract class Strategy
-    {
-        public abstract void AlgorithmInterface();
-    }
+    //abstract class Strategy
+    //{
+    //    public abstract void AlgorithmInterface();
+    //}
 
-    class ConcreteStrategy : Strategy
-    {
-        public override void AlgorithmInterface()
-        {
-            Console.WriteLine("Called ConcreteStrategyA.AlgoritmaInterface()");
-        }
-    }
+    //class ConcreteStrategy : Strategy
+    //{
+    //    public override void AlgorithmInterface()
+    //    {
+    //        Console.WriteLine("Called ConcreteStrategyA.AlgoritmaInterface()");
+    //    }
+    //}
 
-    class ConcreteStrategyB : Strategy
-    {
-        public override void AlgorithmInterface()
-        {
-            Console.WriteLine("Called ConcreteStrategyB.AlgorithmInterface()");
-        }
-    }
+    //class ConcreteStrategyB : Strategy
+    //{
+    //    public override void AlgorithmInterface()
+    //    {
+    //        Console.WriteLine("Called ConcreteStrategyB.AlgorithmInterface()");
+    //    }
+    //}
 
-    class ConcreteStrategyC : Strategy
-    {
-        public override void AlgorithmInterface()
-        {
-            Console.WriteLine("Called ConcreteStrategy.AlgorithmInterface()");
-        }
-    } 
+    //class ConcreteStrategyC : Strategy
+    //{
+    //    public override void AlgorithmInterface()
+    //    {
+    //        Console.WriteLine("Called ConcreteStrategy.AlgorithmInterface()");
+    //    }
+    //} 
 
-    class ContextStrategy
-    {
-        private Strategy _strategy;
+    //class ContextStrategy
+    //{
+    //    private Strategy _strategy;
 
-        public ContextStrategy(Strategy strategy)
-        {
-            this._strategy = strategy;
-        }
+    //    public ContextStrategy(Strategy strategy)
+    //    {
+    //        this._strategy = strategy;
+    //    }
 
-        public void ContextInterface()
-        {
-            _strategy.AlgorithmInterface();
-        }
-    }
+    //    public void ContextInterface()
+    //    {
+    //        _strategy.AlgorithmInterface();
+    //    }
+    //}
 }
